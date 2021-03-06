@@ -2,21 +2,26 @@
 
 ![Workflow result](https://github.com/MirzaAhmedBaig/android-dev-challenge-compose/workflows/Check/badge.svg)
 
-
 ## :scroll: Description
-Puppy adoption app lists few types of breeds, you can find detailed information by clicking on a puppy.
 
+Puppy adoption app lists few types of breeds, you can find detailed information by clicking on a
+puppy.
 
 ## :bulb: Motivation and Context
+
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-
+Skipping adapters and recyclerview for list was interesting, also using Navigation without having
+xml graph file was great.
 
 ## :camera_flash: Screenshots
+
 <!-- You can add more screenshots here if you like -->
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+<img src="/results/screenshot_1.png" width="260">
+&emsp;<img src="/results/screenshot_2.png" width="260">
 
 ## License
+
 ```
 Copyright 2020 The Android Open Source Project
 
