@@ -16,13 +16,13 @@
 package com.example.androiddevchallenge.ui.components
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -54,9 +54,7 @@ fun PuppiesListItem(puppyInfo: PuppyInfo, modifier: Modifier = Modifier) {
                 .clip(CircleShape),
             contentScale = ContentScale.Crop
         )
-
         Spacer(modifier = Modifier.width(16.dp))
-
         Column(Modifier.fillMaxWidth()) {
             Text(text = puppyInfo.name, style = MaterialTheme.typography.h6)
             Text(text = puppyInfo.breed, style = MaterialTheme.typography.body1)

@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 @Composable
 fun MyApp() {
     Surface(color = MaterialTheme.colors.background) {
-        val navController= rememberNavController()
+        val navController = rememberNavController()
         MainNavigationControl(navController)
     }
 }

@@ -48,5 +48,4 @@ fun MainNavigationControl(navController: NavHostController) {
             )
         }
     }
-
 }

@@ -39,19 +39,19 @@ import com.example.androiddevchallenge.viewmodel.PuppyViewModel
 @Composable
 fun PuppyDetailsScreen(id: Int, viewModel: PuppyViewModel, navController: NavHostController) {
     val puppyData = viewModel.findPuppy(id)
-
     puppyData?.let { info ->
-        Scaffold(topBar = {
-            AppBar(
-                appBarText = info.name,
-                navController = navController,
-                isBackButtonToShow = true
-            )
-        }) {
+        Scaffold(
+            topBar = {
+                AppBar(
+                    appBarText = info.name,
+                    navController = navController,
+                    isBackButtonToShow = true
+                )
+            }
+        ) {
             PuppyDetailsItem(puppyInfo = info)
         }
     }
-
 }
 
 @Composable
@@ -79,7 +79,6 @@ fun PuppyDetailsItem(puppyInfo: PuppyInfo) {
         Text(text = puppyInfo.gender, style = MaterialTheme.typography.body2)
         Spacer(modifier = Modifier.height(16.dp))
         Text(text = puppyInfo.details, style = MaterialTheme.typography.body2)
-
     }
 }
 
